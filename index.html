@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lotería Virtual</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="inicio">
+
+    <h1>Lotería Virtual</h1>
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Ingresa tu nombre"
+    >
+
+    <button onclick="iniciarJuego()">
+        Entrar
+    </button>
+
+</div>
+
+<div id="juego" style="display:none;">
+
+    <div class="superior">
+
+        <h2 id="jugador"></h2>
+
+        <div id="cronometro">
+            00:00
+        </div>
+
+    </div>
+
+    <div class="cartaActual">
+
+        <h3>Carta actual</h3>
+
+        <img
+            id="imagenCarta"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+    <div id="tablero"></div>
+
+    <button id="btnLoteria">
+        ¡LOTERÍA!
+    </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
