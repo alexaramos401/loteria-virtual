@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lotería Virtual</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="inicio">
+
+    <h1>Lotería Virtual</h1>
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre del jugador"
+    >
+
+    <br><br>
+
+    <input
+        type="text"
+        id="codigoSala"
+        placeholder="Código de sala"
+    >
+
+    <br><br>
+
+    <button onclick="crearSalaUI()">
+        Crear Sala
+    </button>
+
+    <button onclick="unirseSalaUI()">
+        Unirse
+    </button>
+
+</div>
+
+<div id="juego" style="display:none;">
+
+    <div class="superior">
+
+        <h2 id="jugador"></h2>
+
+        <div id="cronometro">
+            00:00
+        </div>
+
+    </div>
+
+    <div class="cartaActual">
+
+        <h3>Carta actual</h3>
+
+        <img
+            id="imagenCarta"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+    <div id="tablero"></div>
+
+    <button id="btnLoteria" onclick="verificarLoteria()">
+        ¡LOTERÍA!
+    </button>
+
+    <div id="jugadoresConectados">
+
+        <h3>Jugadores conectados</h3>
+
+        <ul id="listaJugadores"></ul>
+
+    </div>
+
+    <button
+        id="btnIniciar"
+        style="display:none"
+    >
+        Iniciar Partida
+    </button>
+
+    <div id="ranking">
+
+        <h3>Resultados</h3>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Lugar</th>
+                    <th>Jugador</th>
+                    <th>Tiempo</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaRanking">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
