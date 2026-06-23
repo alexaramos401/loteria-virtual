@@ -52,3 +52,29 @@ button{
     font-size:28px;
     font-weight:bold;
 }
+
+.cartaTablero {
+    transition: all 0.3s ease;
+}
+
+/* Correcta */
+.ok {
+    border: 3px solid #2ecc71;
+    box-shadow: 0 0 10px #2ecc71;
+    opacity: 0.9;
+}
+
+/* Error */
+.error {
+    border: 3px solid #e74c3c;
+    box-shadow: 0 0 10px #e74c3c;
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+/* Advertencia */
+.warn {
+    border: 3px solid #f1c40f;
+    box-shadow: 0 0 10px #f1c40f;
+    opacity: 0.8;
+}
