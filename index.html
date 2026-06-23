@@ -16,11 +16,25 @@
     <input
         type="text"
         id="nombre"
-        placeholder="Ingresa tu nombre"
+        placeholder="Nombre del jugador"
     >
 
-    <button onclick="iniciarJuego()">
-        Entrar
+    <br><br>
+
+    <input
+        type="text"
+        id="codigoSala"
+        placeholder="Código de sala"
+    >
+
+    <br><br>
+
+    <button onclick="crearSalaUI()">
+        Crear Sala
+    </button>
+
+    <button onclick="unirseSalaUI()">
+        Unirse
     </button>
 
 </div>
@@ -51,13 +65,51 @@
 
     <div id="tablero"></div>
 
-    <button id="btnLoteria">
+    <button id="btnLoteria" onclick="verificarLoteria()">
         ¡LOTERÍA!
     </button>
 
+    <div id="jugadoresConectados">
+
+        <h3>Jugadores conectados</h3>
+
+        <ul id="listaJugadores"></ul>
+
+    </div>
+
+    <button
+        id="btnIniciar"
+        style="display:none"
+    >
+        Iniciar Partida
+    </button>
+
+    <div id="ranking">
+
+        <h3>Resultados</h3>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Lugar</th>
+                    <th>Jugador</th>
+                    <th>Tiempo</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaRanking">
+            </tbody>
+
+        </table>
+
+    </div>
+
 </div>
 
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 
 </body>
 </html>
